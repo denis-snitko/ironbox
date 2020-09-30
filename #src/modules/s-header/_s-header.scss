@@ -1,3 +1,119 @@
-.header {
- 
+.s-header {
+  padding: 13px 0;
+  font-family: $second-typeface;
+  background-color: #1b1b1b;
+
+  .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+
+    &__contacts {
+      position: relative;
+      margin-left: 50px;
+      padding-left: 35px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+      }
+
+      &--mail {
+        &::before {
+          content: url("../img/icons/mail.svg");
+        }
+      }
+      &--phone {
+        &::before {
+          content: url("../img/icons/phone.svg");
+        }
+      }
+      &--mobile {
+        &::before {
+          content: url("../img/icons/mobile.svg");
+        }
+      }
+
+      a {
+        position: relative;
+        color: inherit;
+        transition: $base-transition;
+
+        &:hover {
+          color: #ff8b00;
+        }
+      }
+    }
+
+    &__cart {
+      position: relative;
+      margin-left: 65px;
+
+      svg {
+        margin-bottom: -6px;
+      }
+
+      &-count {
+        position: absolute;
+        top: -5px;
+        left: 25px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 24px;
+        color: #ffffff;
+        background-color: #ff8b00;
+        border-radius: 50%;
+      }
+
+      &-summ {
+        display: inline-block;
+        color: #ff8b00;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: $second-typeface;
+
+  &__item {
+    &:last-child a {
+      margin-right: -50px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 25px 50px;
+    color: #020205;
+
+    transform: skewX(-20deg);
+    transition: $base-transition;
+
+   
+
+    &:hover {
+      color: #ffffff;
+      background-color: #ff8b00;
+    }
+
+    span {
+      transform: skewX(20deg);
+      display: inline-block;
+    }
+  }
 }
