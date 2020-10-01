@@ -1,4 +1,17 @@
 body {
-    font-family: $base-typeface;
-    font-size: $base-font-size;
+  font-family: $base-typeface;
+  font-size: $base-font-size;
+}
+
+.main-title {
+  padding-bottom: 70px;
+  font-family: $second-typeface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.orange-text {
+  color: #ff8b00;
 }

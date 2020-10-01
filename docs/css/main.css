@@ -413,6 +413,19 @@ body {
   font-size: 16px;
 }
 
+.main-title {
+  padding-bottom: 70px;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.orange-text {
+  color: #ff8b00;
+}
+
 /* End Typography */
 
 /* Base styles */
@@ -441,8 +454,128 @@ body {
   padding-right: 15px;
 }
 
-.orange-text {
-  color: #ff8b00;
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-4,
+.col-6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #000;
+}
+
+.col-4 {
+  width: calc(33.33333% - 30px);
+}
+
+.col-6 {
+  width: calc(50% - 30px);
+}
+
+.big-set {
+  border: 1px solid #000;
+  padding-bottom: 50px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+}
+
+.big-set__descr {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.big-set__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-set__title {
+  max-width: 200px;
+  padding-bottom: 25px;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #020205;
+}
+
+.big-set__price {
+  font-family: "RussoOne-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.big-set__slogan {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+.big-set__btn-row {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-set__base-list {
+  border-bottom: 1px solid #cccccc;
+}
+
+.big-set .col-6 {
+  border-radius: 5px;
+}
+
+.base-list {
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+.base-list li {
+  padding-left: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.base-list li:last-child {
+  padding-bottom: 0;
+}
+
+.base-list li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 139, 0, 0.5);
+  border-radius: 50%;
 }
 
 .base-btn {
@@ -464,8 +597,12 @@ body {
 .base-btn:hover {
   -webkit-box-shadow: inset 0px 0px 0px 0px #e37c00;
           box-shadow: inset 0px 0px 0px 0px #e37c00;
-  -webkit-filter: drop-shadow(0px 2px 2px rgba(255, 139, 0, 0.6));
-          filter: drop-shadow(0px 2px 2px rgba(255, 139, 0, 0.6));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(255, 139, 0, 0.6));
+          filter: drop-shadow(0px 3px 3px rgba(255, 139, 0, 0.6));
+}
+
+.base-btn--darken {
+  background: #DB6D00;
 }
 
 /* End Base styles */
@@ -634,6 +771,10 @@ body {
   top: 2px;
   display: inline-block;
   margin-left: 19px;
+}
+
+.s-all-set__main-title {
+  text-align: center;
 }
 
 /* END MAIN STYLES */
