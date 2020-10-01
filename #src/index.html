@@ -2,30 +2,37 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Сборка Gulp</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Сборка Gulp</title>
 </head>
+<style>
+  /* Надпись NEW в красном кружочке */
+  .small-set--new::before {
+    content: 'New'
+  }
+</style>
 
 <body>
-    <div class="main-body">
+  <div class="main-body">
 
-        @@include('modules/s-header/_s-header.html')
-        @@include('modules/s-hero/_s-hero.html')
-        
-        <div class="main-content">
-            <div class="container">
-                @@include('modules/s-all-set/_s-all-set.html')
-            </div>
-        </div>
+    @@include('modules/s-header/_s-header.html')
+    @@include('modules/s-hero/_s-hero.html')
 
-        <footer>footer</footer>
-
+    <div class="main-content">
+      <div class="container">
+        @@include('modules/s-all-set/_s-all-set.html')
+        @@include('modules/s-arrivals/_s-arrivals.html')
+      </div>
     </div>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/main.js"></script>
+
+    <footer>footer</footer>
+
+  </div>
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
