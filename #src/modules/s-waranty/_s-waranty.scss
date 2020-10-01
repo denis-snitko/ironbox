@@ -1,0 +1,28 @@
+.s-waranty {
+  padding: 75px 0;
+
+  &__main-title {
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  &__small-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #020205;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #3f3f3f;
+  }
+}
