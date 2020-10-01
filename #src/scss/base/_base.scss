@@ -19,7 +19,7 @@
 .col-4,
 .col-6 {
   @include col();
-  border: 1px solid #000;
+  // border: 1px solid #000;
 }
 
 .col-4 {
@@ -32,7 +32,6 @@
 
 //BIG-SET
 .big-set {
-  border: 1px solid #000;
   padding-bottom: 50px;
   background-color: #f7f7f5;
   border-radius: 5px;
@@ -48,7 +47,6 @@
   }
 
   &__title {
-    max-width: 200px;
     padding-bottom: 25px;
     font-family: $second-typeface;
     font-style: normal;
@@ -79,24 +77,80 @@
     justify-content: space-between;
   }
 
-  
   &__base-list {
     border-bottom: 1px solid #cccccc;
   }
 
   .col-6 {
-  border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  &__swiper {
+    .slider__item {
+      img {
+        display: block;
+        width: 570px;
+        height: 388px;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-container-thumbs {
+      margin-top: 20px;
+
+      img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+
+        cursor: pointer;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+
+      text-align: center;
+      line-height: 43px;
+      border-radius: 50%;
+
+      background-color: #ff8b00;
+
+      cursor: pointer;
+      transition: $base-transition;
+
+      &:hover {
+        filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
+      }
+    }
+
+    .swiper-button-next {
+      left: auto;
+      right: 0;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 
 //BASE-LIST
 .base-list {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   color: #3f3f3f;
-  
+
   li {
     padding-left: 30px;
     position: relative;
@@ -115,7 +169,7 @@
       display: inline-block;
       width: 15px;
       height: 15px;
-      background-color: rgba($color: #ff8b00, $alpha: .5);
+      background-color: rgba($color: #ff8b00, $alpha: 0.5);
       border-radius: 50%;
     }
   }
@@ -143,6 +197,17 @@
   }
 
   &--darken {
-  background: #DB6D00;
+    background: #db6d00;
+  }
+
+  
+  &--arrow {
+
+    span {
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-left: 19px;
+    }
   }
 }

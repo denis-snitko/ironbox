@@ -30,6 +30,6 @@
   "dependencies": {
     "jquery": "^3.5.1",
     "smart-grid": "^2.1.2",
-    "swiper": "^5.4.5"
+    "swiper": "^6.3.2"
   }
 }

@@ -70,7 +70,7 @@
       </p>
     </div>
 
-    <a href="#" class="base-btn s-hero__base-btn">
+    <a href="#" class="base-btn base-btn--arrow">
       Перейти в каталог
       <span>
         <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,13 +92,80 @@
     <span class="orange-text">Все</span> подарочные наборы
   </h2>
 
-  <div class="big-set">
+  <div class="big-set s-all-set__big-set">
     <div class="row-flex">
-      <div class="col-6">slider</div>
+      <div class="col-6">
+        <div class="big-set__swiper">
+          <div class="swiper-container swiper-container-product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="swiper-button-next"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-container swiper-container-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="col-6">
         <div class="big-set__descr">
           <div class="big-set__row">
-            <div class="big-set__title">Набор №1 : Good Look!</div>
+            <div class="big-set__title">Набор №1 : 
+              <br>
+              Good Look!
+            </div>
             <div class="big-set__price orange-text">5000 ₽</div>
           </div>
           <div class="big-set__slogan">
@@ -124,6 +191,211 @@
     </div>
   </div>
 
+  <div class="big-set s-all-set__big-set">
+    <div class="row-flex">
+      <div class="col-6">
+        <div class="big-set__swiper">
+          <div class="swiper-container swiper-container-product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="swiper-button-next"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-container swiper-container-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="big-set__descr">
+          <div class="big-set__row">
+            <div class="big-set__title">Набор №2 : <br>Race with Pleasure!</div>
+            <div class="big-set__price orange-text">8030 ₽</div>
+          </div>
+          <div class="big-set__slogan">
+            <p>Приведи себя в порядок перед важным стартом!</p>
+          </div>
+
+          <ul class="base-list big-set__base-list">
+            <li>Напульсник на руку</li>
+            <li>Напульсник на голову</li>
+            <li>Тэйпы рулон</li>
+            <li>Спортивное питание</li>
+            <li>Бутылка питьевая</li>
+          </ul>
+
+          <div class="big-set__btn-row">
+            <div>counter</div>
+            <button class="base-btn">В корзину</button>
+            <button class="base-btn base-btn--darken">Подробнее</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-set s-all-set__big-set">
+    <div class="row-flex">
+      <div class="col-6">
+        <div class="big-set__swiper">
+          <div class="swiper-container swiper-container-product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="swiper-button-next"><svg width="8" height="15" viewBox="0 0 8 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.83065 15C6.68126 15.0005 6.53365 14.9676 6.39867 14.9035C6.26369 14.8395 6.14477 14.7461 6.05065 14.63L1.22065 8.63003C1.07357 8.4511 0.993164 8.22666 0.993164 7.99503C0.993164 7.76341 1.07357 7.53896 1.22065 7.36003L6.22065 1.36003C6.39039 1.15581 6.6343 1.02739 6.89873 1.00301C7.16315 0.978631 7.42644 1.06029 7.63065 1.23003C7.83487 1.39977 7.96329 1.64368 7.98767 1.90811C8.01205 2.17253 7.93039 2.43581 7.76065 2.64003L3.29065 8.00003L7.61065 13.36C7.73293 13.5068 7.81061 13.6856 7.83449 13.8751C7.85837 14.0647 7.82745 14.2571 7.7454 14.4296C7.66334 14.6021 7.53358 14.7475 7.37147 14.8486C7.20936 14.9497 7.02169 15.0023 6.83065 15Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-container swiper-container-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-1.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-2.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-3.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-4.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-5.jpg" alt="#" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/products/product-6.jpg" alt="#" /></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="big-set__descr">
+          <div class="big-set__row">
+            <div class="big-set__title">Набор №3 : <br>
+              The winners finish!</div>
+            <div class="big-set__price orange-text">18 030 ₽</div>
+          </div>
+          <div class="big-set__slogan">
+            <p>Приведи себя в порядок перед важным стартом!</p>
+          </div>
+
+          <ul class="base-list big-set__base-list">
+            <li>Пиво б/а 0,33</li>
+            <li>Браслет “Real champion”</li>
+            <li>Массажер</li>
+            <li>Охлаждалка</li>
+            <li>СПАС - одеяло</li>
+          </ul>
+
+          <div class="big-set__btn-row">
+            <div>counter</div>
+            <button class="base-btn">В корзину</button>
+            <button class="base-btn base-btn--darken">Подробнее</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="base-btn base-btn--arrow s-all-set__base-btn">
+    Перейти в каталог
+    <span>
+      <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.17033 2.90536e-05C1.31972 -0.000479242 1.46733 0.0324931 1.60231 0.0965219C1.73729 0.160551 1.85621 0.25401 1.95033 0.37003L6.78033 6.37003C6.92741 6.54896 7.00781 6.7734 7.00781 7.00503C7.00781 7.23665 6.92741 7.4611 6.78033 7.64003L1.78032 13.64C1.61059 13.8442 1.36667 13.9727 1.10225 13.997C0.837822 14.0214 0.574541 13.9398 0.370325 13.77C0.166108 13.6003 0.037684 13.3564 0.0133043 13.092C-0.0110754 12.8275 0.0705859 12.5642 0.240325 12.36L4.71033 7.00003L0.390326 1.64003C0.268043 1.49324 0.190366 1.3145 0.166486 1.12495C0.142607 0.935406 0.173524 0.742981 0.25558 0.570454C0.337636 0.397927 0.467396 0.252515 0.629506 0.151425C0.791616 0.0503344 0.979292 -0.00220256 1.17033 2.90536e-05Z"
+          fill="white" />
+      </svg>
+
+    </span>
+  </a>
+  
 </section>
             </div>
         </div>

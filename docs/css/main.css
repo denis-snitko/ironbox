@@ -471,7 +471,6 @@ body {
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
-  border: 1px solid #000;
 }
 
 .col-4 {
@@ -483,7 +482,6 @@ body {
 }
 
 .big-set {
-  border: 1px solid #000;
   padding-bottom: 50px;
   background-color: #f7f7f5;
   border-radius: 5px;
@@ -504,7 +502,6 @@ body {
 }
 
 .big-set__title {
-  max-width: 200px;
   padding-bottom: 25px;
   font-family: "RussoOne-Regular", sans-serif;
   font-style: normal;
@@ -548,8 +545,67 @@ body {
   border-radius: 5px;
 }
 
+.big-set__swiper .slider__item img {
+  display: block;
+  width: 570px;
+  height: 388px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.big-set__swiper .swiper-container-thumbs {
+  margin-top: 20px;
+}
+
+.big-set__swiper .swiper-container-thumbs img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.big-set__swiper .swiper-button-prev,
+.big-set__swiper .swiper-button-next {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 50%;
+  background-color: #ff8b00;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.big-set__swiper .swiper-button-prev:hover,
+.big-set__swiper .swiper-button-next:hover {
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
+          filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
+}
+
+.big-set__swiper .swiper-button-next {
+  left: auto;
+  right: 0;
+}
+
+.big-set__swiper .swiper-button-next svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .base-list {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -602,7 +658,14 @@ body {
 }
 
 .base-btn--darken {
-  background: #DB6D00;
+  background: #db6d00;
+}
+
+.base-btn--arrow span {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  margin-left: 19px;
 }
 
 /* End Base styles */
@@ -766,15 +829,21 @@ body {
   opacity: 0.7;
 }
 
-.s-hero__base-btn span {
-  position: relative;
-  top: 2px;
-  display: inline-block;
-  margin-left: 19px;
-}
-
 .s-all-set__main-title {
   text-align: center;
+}
+
+.s-all-set__big-set {
+  margin-bottom: 40px;
+}
+
+.s-all-set__base-btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 30px;
 }
 
 /* END MAIN STYLES */
