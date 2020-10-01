@@ -17,17 +17,26 @@
 }
 
 .col-4,
-.col-6 {
+.col-5,
+.col-6,
+.col-7 {
   @include col();
 }
 
 .col-4 {
   @include size(4);
-  // border: 1px solid #000;
+}
+
+.col-5 {
+  @include size(5);
 }
 
 .col-6 {
   @include size(6);
+}
+
+.col-7 {
+  @include size(7);
 }
 
 // BASE-BTN
