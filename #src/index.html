@@ -13,6 +13,11 @@
   .small-set--new::before {
     content: 'New'
   }
+
+  /* Надпись ХИТ в красном кружочке */
+  .small-set--best::before {
+    content: 'Хит'
+  }
 </style>
 
 <body>
@@ -25,6 +30,7 @@
       <div class="container">
         @@include('modules/s-all-set/_s-all-set.html')
         @@include('modules/s-arrivals/_s-arrivals.html')
+        @@include('modules/s-bestsellers/_s-bestsellers.html')
       </div>
     </div>
 

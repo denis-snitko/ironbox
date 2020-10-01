@@ -258,7 +258,8 @@
     font-size: 16px;
   }
 
-  &--new {
+  &--new,
+  &--best {
     &::before {
       content: "";
       position: absolute;
