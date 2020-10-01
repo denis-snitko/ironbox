@@ -1,0 +1,35 @@
+.s-hero {
+  margin-bottom: 75px;
+  padding-top: 133px;
+  padding-bottom: 193px;
+  // height: 700px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    max-width: 730px;
+    margin-bottom: 40px;
+    font-family: $second-typeface;
+    font-size: 45px;
+    // color: #ffffff;
+  }
+
+  &__descr {
+    max-width: 578px;
+    margin-bottom: 90px;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  &__base-btn {
+
+    span {
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-left: 19px;
+    }
+  }
+}

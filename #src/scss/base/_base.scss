@@ -10,5 +10,29 @@
 
 .container {
   @include container();
-  // border: 1px solid #000;
+}
+
+.orange-text {
+  color: #ff8b00;
+}
+
+.base-btn {
+  display: inline-block;
+  padding: 16px 36px;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  background: #ff8b00;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px -3px 0px 0px #e37c00;
+
+  transition: $base-transition;
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 0px #e37c00;
+    filter: drop-shadow(0px 2px 2px rgba(255, 139, 0, 0.6));
+  }
 }
