@@ -37,3 +37,12 @@ let swiper = new Swiper('.swiper-container-reviews', {
   },
 });
 
+// ACCORDEON
+
+window.addEventListener('click', (event) => {
+  if (event.target.hasAttribute('data-accordeon_trigger')) {
+    event.target.classList.toggle('accordeon__item-title--active');
+    event.target.nextElementSibling.classList.toggle('accordeon__item-text--show');
+
+  }
+})

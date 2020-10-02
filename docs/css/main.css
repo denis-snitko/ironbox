@@ -1133,6 +1133,46 @@ body {
   text-align: center;
 }
 
+.accordeon {
+  border-radius: 5px;
+}
+
+.accordeon__item-title {
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  background: #f7f7f5;
+  border-left: 1px solid #f7f7f5;
+  border-right: 1px solid #f7f7f5;
+  border-bottom: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.accordeon__item-title--active {
+  color: #ffffff;
+  background: #ff8b00;
+  border-left: 1px solid #ff8b00;
+  border-right: 1px solid #ff8b00;
+  border-bottom: none;
+}
+
+.accordeon__item-text {
+  display: none;
+  padding: 30px;
+  font-size: 18px;
+  color: #3f3f3f;
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+
+.accordeon__item-text p {
+  max-width: 774px;
+}
+
+.accordeon__item-text--show {
+  display: block;
+}
+
 .s-reviews {
   padding: 75px 0;
 }
