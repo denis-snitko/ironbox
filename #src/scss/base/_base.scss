@@ -117,7 +117,7 @@
     cursor: pointer;
 
     &::after {
-      content: url('../img/icons/plus.svg');
+      content: url("../img/icons/plus.svg");
       position: absolute;
       top: 50%;
       right: 30px;
@@ -125,16 +125,16 @@
       height: 24px;
       transform: translateY(-50%);
     }
-    
+
     &--active {
       color: #ffffff;
       background: #ff8b00;
       border-left: 1px solid #ff8b00;
       border-right: 1px solid #ff8b00;
       border-bottom: none;
-      
+
       &::after {
-        content: url('../img/icons/minus.svg');
+        content: url("../img/icons/minus.svg");
       }
     }
   }

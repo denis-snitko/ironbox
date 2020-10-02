@@ -1113,6 +1113,36 @@ body {
   border-color: transparent transparent #ffffff transparent;
 }
 
+.s-subscribe__title {
+  margin-bottom: 30px;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.s-subscribe__woman {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  max-width: 300px;
+  width: 100%;
+  max-height: 506px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/woman.png");
+}
+
+.s-subscribe__subscribe-form {
+  text-align: left;
+}
+
+.s-subscribe__subscribe-form .custom-checkbox {
+  padding-left: 0;
+}
+
 .s-package {
   padding: 75px 0;
 }
