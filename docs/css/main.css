@@ -555,6 +555,7 @@ body {
 }
 
 .accordeon__item-title {
+  position: relative;
   padding: 15px 30px;
   font-weight: bold;
   font-size: 20px;
@@ -565,12 +566,28 @@ body {
   cursor: pointer;
 }
 
+.accordeon__item-title::after {
+  content: url("../img/icons/plus.svg");
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .accordeon__item-title--active {
   color: #ffffff;
   background: #ff8b00;
   border-left: 1px solid #ff8b00;
   border-right: 1px solid #ff8b00;
   border-bottom: none;
+}
+
+.accordeon__item-title--active::after {
+  content: url("../img/icons/minus.svg");
 }
 
 .accordeon__item-text {
