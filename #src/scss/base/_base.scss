@@ -70,7 +70,7 @@
     width: 25px;
     height: 25px;
   }
-  
+
   a {
     position: relative;
     color: inherit;
@@ -96,7 +96,52 @@
       content: url("../img/icons/mobile.svg");
     }
   }
+}
 
+// ACCORDEON
+
+.accordeon {
+  border-radius: 5px;
+
+  &__item-title {
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+
+    background: #f7f7f5;
+    border-left: 1px solid #f7f7f5;
+    border-right: 1px solid #f7f7f5;
+    border-bottom: 1px solid #cccccc;
+
+    cursor: pointer;
+
+    &--active {
+      color: #ffffff;
+      background: #ff8b00;
+      border-left: 1px solid #ff8b00;
+      border-right: 1px solid #ff8b00;
+      border-bottom: none;
+    }
+  }
+
+  &__item-text {
+    display: none;
+
+    padding: 30px;
+    font-size: 18px;
+    color: #3f3f3f;
+
+    border: 1px solid #cccccc;
+    border-top: none;
+
+    p {
+      max-width: 774px;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
 }
 
 // SEO-TEXT {
