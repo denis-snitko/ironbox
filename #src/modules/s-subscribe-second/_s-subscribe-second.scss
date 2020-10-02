@@ -37,6 +37,13 @@
   &__subscribe-form {
     text-align: center;
   }
+
+  // MEDIA
+  @include md-block() {
+    .custom-checkbox {
+      padding-left: 0;
+    }
+  }
 }
 
 .subscribe-form {

@@ -47,7 +47,12 @@
   }
 
   .contacts {
+    margin-left: 0;
     margin-bottom: 10px;
     text-align: right;
+  }
+
+  // MEDIA
+  @include xs-block() {
   }
 }

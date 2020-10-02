@@ -2,5 +2,5 @@
 
 // Px to Rem
 @function rem($px) {
-    @return ($px / $base-font-size) +rem;
+    @return ($px / $base-font-size) + rem;
 }
