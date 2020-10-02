@@ -464,16 +464,22 @@ body {
   margin-right: -15px;
 }
 
+.col-2,
 .col-3,
 .col-4,
 .col-5,
 .col-6,
-.col-7 {
+.col-7,
+.col-8 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.col-2 {
+  width: calc(16.66667% - 30px);
 }
 
 .col-3 {
@@ -494,6 +500,54 @@ body {
 
 .col-7 {
   width: calc(58.33333% - 30px);
+}
+
+.col-8 {
+  width: calc(66.66667% - 30px);
+}
+
+.contacts {
+  position: relative;
+  margin-left: 50px;
+  padding-left: 35px;
+  color: #ffffff;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.contacts a {
+  position: relative;
+  color: inherit;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.contacts a:hover {
+  color: #ff8b00;
+}
+
+.contacts--mail::before {
+  content: url("../img/icons/mail.svg");
+}
+
+.contacts--phone::before {
+  content: url("../img/icons/phone.svg");
+}
+
+.contacts--mobile::before {
+  content: url("../img/icons/mobile.svg");
 }
 
 .seo-text {
@@ -835,49 +889,6 @@ body {
   color: #ffffff;
 }
 
-.s-header .top-header__contacts {
-  position: relative;
-  margin-left: 50px;
-  padding-left: 35px;
-}
-
-.s-header .top-header__contacts::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-}
-
-.s-header .top-header__contacts--mail::before {
-  content: url("../img/icons/mail.svg");
-}
-
-.s-header .top-header__contacts--phone::before {
-  content: url("../img/icons/phone.svg");
-}
-
-.s-header .top-header__contacts--mobile::before {
-  content: url("../img/icons/mobile.svg");
-}
-
-.s-header .top-header__contacts a {
-  position: relative;
-  color: inherit;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.s-header .top-header__contacts a:hover {
-  color: #ff8b00;
-}
-
 .s-header .top-header__cart {
   position: relative;
   margin-left: 65px;
@@ -1187,6 +1198,58 @@ body {
   color: #ff8b00;
   background-color: transparent;
   border: none;
+}
+
+.s-footer {
+  padding-top: 38px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  font-family: "RussoOne-Regular", sans-serif;
+  background-color: #020205;
+}
+
+.s-footer__logo img {
+  width: 167px;
+  height: 127px;
+}
+
+.s-footer__menu-item {
+  margin-bottom: 20px;
+}
+
+.s-footer__menu-item a {
+  color: inherit;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.s-footer__menu-item a:hover {
+  color: #ff8b00;
+}
+
+.s-footer__copy {
+  padding-top: 20px;
+  text-align: right;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.s-footer__copy a {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.s-footer__copy a:hover {
+  color: #ff8b00;
+}
+
+.s-footer .contacts {
+  margin-bottom: 10px;
+  text-align: right;
 }
 
 /* END MAIN STYLES */

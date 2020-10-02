@@ -9,49 +9,6 @@
     justify-content: flex-end;
     color: #ffffff;
 
-    &__contacts {
-      position: relative;
-      margin-left: 50px;
-      padding-left: 35px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-      }
-
-      &--mail {
-        &::before {
-          content: url("../img/icons/mail.svg");
-        }
-      }
-      &--phone {
-        &::before {
-          content: url("../img/icons/phone.svg");
-        }
-      }
-      &--mobile {
-        &::before {
-          content: url("../img/icons/mobile.svg");
-        }
-      }
-
-      a {
-        position: relative;
-        color: inherit;
-        transition: $base-transition;
-
-        &:hover {
-          color: #ff8b00;
-        }
-      }
-    }
-
     &__cart {
       position: relative;
       margin-left: 65px;
@@ -103,8 +60,6 @@
 
     transform: skewX(-20deg);
     transition: $base-transition;
-
-   
 
     &:hover {
       color: #ffffff;

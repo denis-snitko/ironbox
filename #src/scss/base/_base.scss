@@ -16,17 +16,22 @@
   @include row-flex();
 }
 
+.col-2,
 .col-3,
 .col-4,
 .col-5,
 .col-6,
-.col-7 {
+.col-7,
+.col-8 {
   @include col();
+}
+
+.col-2 {
+  @include size(2);
 }
 
 .col-3 {
   @include size(3);
-  // border: 1px solid #000;
 }
 
 .col-4 {
@@ -43,6 +48,55 @@
 
 .col-7 {
   @include size(7);
+}
+
+.col-8 {
+  @include size(8);
+}
+
+.contacts {
+  position: relative;
+  margin-left: 50px;
+  padding-left: 35px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+  
+  a {
+    position: relative;
+    color: inherit;
+    transition: $base-transition;
+
+    &:hover {
+      color: #ff8b00;
+    }
+  }
+
+  &--mail {
+    &::before {
+      content: url("../img/icons/mail.svg");
+    }
+  }
+  &--phone {
+    &::before {
+      content: url("../img/icons/phone.svg");
+    }
+  }
+  &--mobile {
+    &::before {
+      content: url("../img/icons/mobile.svg");
+    }
+  }
+
 }
 
 // SEO-TEXT {
