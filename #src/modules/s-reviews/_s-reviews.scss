@@ -31,10 +31,7 @@
   }
   &__swiper-button-next {
     left: 75px;
-
   }
-
-
 
   &__item {
     padding: 30px;
@@ -57,8 +54,14 @@
   }
 
   &__text {
+    height: 76px;
     padding-bottom: 15px;
     color: #3f3f3f;
+    overflow: hidden;
+
+    &--toggle {
+      height: 100%;
+    }
   }
 
   &__btn {

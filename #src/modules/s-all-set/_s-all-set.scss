@@ -15,4 +15,12 @@
     transform: translateX(-50%);
     margin-top: 30px;
   }
+
+  .swiper-slide-visible {
+    opacity: 0.65;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
 }
