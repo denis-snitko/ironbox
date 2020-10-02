@@ -515,6 +515,7 @@ body {
 .base-btn {
   display: inline-block;
   padding: 16px 36px;
+  font-family: "RussoOne-Regular", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
@@ -631,8 +632,8 @@ body {
   cursor: pointer;
 }
 
-.big-set__swiper .swiper-button-prev,
-.big-set__swiper .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
   z-index: 5;
   top: 50%;
@@ -652,18 +653,18 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.big-set__swiper .swiper-button-prev:hover,
-.big-set__swiper .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
   -webkit-filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
           filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
 }
 
-.big-set__swiper .swiper-button-next {
+.swiper-button-next {
   left: auto;
   right: 0;
 }
 
-.big-set__swiper .swiper-button-next svg {
+.swiper-button-next svg {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1125,6 +1126,67 @@ body {
 
 .s-reviews__main-title {
   text-align: center;
+}
+
+.s-reviews__base-btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.s-reviews .swiper-container-reviews {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.s-reviews__swiper-button-prev,
+.s-reviews__swiper-button-next {
+  top: auto;
+  bottom: 0;
+  width: 45px;
+  height: 47px;
+  line-height: 52px;
+}
+
+.s-reviews__swiper-button-next {
+  left: 75px;
+}
+
+.s-reviews__item {
+  padding: 30px;
+  font-size: 18px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+}
+
+.s-reviews__author {
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #020205;
+}
+
+.s-reviews__descr {
+  padding-bottom: 15px;
+  font-weight: 300;
+  color: #020205;
+}
+
+.s-reviews__text {
+  padding-bottom: 15px;
+  color: #3f3f3f;
+}
+
+.s-reviews__btn {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff8b00;
+  background-color: transparent;
+  border: none;
 }
 
 /* END MAIN STYLES */

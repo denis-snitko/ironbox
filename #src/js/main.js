@@ -24,3 +24,16 @@ itemSwiper.forEach(swiper => {
   })
 })
 
+// SWIPER REWIEWS
+
+let swiper = new Swiper('.swiper-container-reviews', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
