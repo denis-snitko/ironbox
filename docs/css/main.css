@@ -1111,4 +1111,20 @@ body {
   color: #3f3f3f;
 }
 
+.s-faq {
+  padding: 75px 0;
+}
+
+.s-faq__main-title {
+  text-align: center;
+}
+
+.s-reviews {
+  padding: 75px 0;
+}
+
+.s-reviews__main-title {
+  text-align: center;
+}
+
 /* END MAIN STYLES */
