@@ -111,9 +111,8 @@ function img() {
     return src(path.src.img)
         .pipe(
             imagemin({
-                progressive: true,
-                svgoPlugins: [{ removeViewBox: false }],
-                interlaced: true,
+                // progressive: true,
+                // interlaced: true,
                 optimizationLevel: 3 // 0 to 7
             })
         )
@@ -121,7 +120,7 @@ function img() {
         .pipe(browsersync.stream())
 }
 
-function fontsStyle() {
+function fontsStyle() { //gulp fontsStyle
 
     let fileContent = fs.readFileSync(sourceFolder + '/scss/base/_fonts.scss');
     if (fileContent == '') {
@@ -201,7 +200,7 @@ function clean() {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, grid, gulp.parallel(html, css, js, img, fonts), fontsStyle);
+let build = gulp.series(clean, grid, gulp.parallel(fonts, html, css, js, img));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
