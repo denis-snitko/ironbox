@@ -8,14 +8,14 @@
   &__base-btn {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
     margin-top: 50px;
+    transform: translateX(-50%);
   }
 
   .swiper-container-reviews {
     position: relative;
-    overflow: hidden;
     padding-bottom: 100px;
+    overflow: hidden;
   }
 
   &__swiper-button-prev,
@@ -27,8 +27,6 @@
     line-height: 52px;
   }
 
-  &__swiper-button-prev {
-  }
   &__swiper-button-next {
     left: 75px;
   }

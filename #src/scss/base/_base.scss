@@ -66,10 +66,10 @@
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
     display: inline-block;
     width: 25px;
     height: 25px;
+    transform: translateY(-50%);
   }
 
   a {
@@ -254,10 +254,10 @@
   }
 
   &__btn-row {
-    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 30px;
   }
 
   &__base-list {
@@ -296,21 +296,22 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  z-index: 5;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  z-index: 5;
   width: 40px;
   height: 40px;
 
-  text-align: center;
   line-height: 43px;
-  border-radius: 50%;
+  text-align: center;
 
   background-color: #ff8b00;
 
-  cursor: pointer;
+  border-radius: 50%;
+
+  transform: translateY(-50%);
   transition: $base-transition;
+  cursor: pointer;
 
   &:hover {
     filter: drop-shadow(0px 5px 5px rgba(255, 139, 0, 0.6));
@@ -318,8 +319,8 @@
 }
 
 .swiper-button-next {
-  left: auto;
   right: 0;
+  left: auto;
 
   svg {
     transform: rotate(180deg);
@@ -350,21 +351,21 @@
     }
 
     &--btn {
-      border-top: 1px solid #cccccc;
       padding-bottom: 0;
+      border-top: 1px solid #cccccc;
     }
   }
 
   &__img {
-    margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 30px;
+    margin-left: -20px;
 
     img {
-      border-radius: 5px 5px 0 0;
       display: block;
       width: 100%;
       height: 246px;
+      border-radius: 5px 5px 0 0;
       object-fit: cover;
     }
   }
@@ -399,10 +400,10 @@
   }
 
   &__base-btn {
-    max-width: 148px;
     width: 100%;
-    padding-left: 16px;
+    max-width: 148px;
     padding-right: 16px;
+    padding-left: 16px;
     font-size: 16px;
   }
 
@@ -417,10 +418,10 @@
       width: 55px;
       height: 55px;
 
-      text-align: center;
       font-family: $second-typeface;
       font-size: 18px;
       line-height: 55px;
+      text-align: center;
 
       color: #ffffff;
 
@@ -439,8 +440,8 @@
   color: #3f3f3f;
 
   li {
-    padding-left: 30px;
     position: relative;
+    padding-left: 30px;
     padding-bottom: 20px;
 
     &:last-child {
@@ -476,9 +477,10 @@
       width: 100%;
       height: 25px;
       margin: 0 14px;
-      text-align: center;
-      font-weight: bold;
+
+      font-weight: 700;
       font-size: 18px;
+      text-align: center;
       color: #020205;
       background: transparent;
       border: 0.5px solid #cccccc;

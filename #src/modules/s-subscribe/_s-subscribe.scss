@@ -1,9 +1,9 @@
 .s-subscribe {
   position: relative;
+  height: 439px;
   margin: 75px 0;
   padding-top: 83px;
   padding-bottom: 70px;
-  height: 439px;
   color: #ffffff;
   background-color: #252525;
   overflow-x: hidden;
@@ -19,8 +19,8 @@
     display: inline-block;
     width: 100%;
     height: 0;
-    border-style: solid;
     border-width: 55px 1920px 0 0;
+    border-style: solid;
     border-color: #ffffff transparent transparent transparent;
   }
 
@@ -35,23 +35,22 @@
     margin-bottom: 30px;
     font-family: $second-typeface;
     font-size: 40px;
-    text-transform: uppercase;
-
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   &__woman {
     position: absolute;
     top: 0;
     z-index: 10;
-    max-width: 300px;
     width: 100%;
-    max-height: 506px;
+    max-width: 300px;
     height: 100%;
+    max-height: 506px;
+    background-image: url("../img/woman.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/woman.png");
   }
 
   &__subscribe-form {
