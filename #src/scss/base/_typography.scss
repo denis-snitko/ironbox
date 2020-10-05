@@ -16,3 +16,44 @@ body {
 .orange-text {
   color: #ff8b00;
 }
+
+// SEO-TEXT {
+.seo-text {
+  padding-bottom: 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #3f3f3f;
+
+  p {
+    padding-bottom: 20px;
+    line-height: 150%;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// NUMBER-LIST
+
+.number-list {
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #3f3f3f;
+
+  li {
+    padding-bottom: 30px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

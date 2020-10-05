@@ -452,6 +452,44 @@ body {
   color: #ff8b00;
 }
 
+.seo-text {
+  padding-bottom: 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+.seo-text p {
+  padding-bottom: 20px;
+  line-height: 150%;
+}
+
+.seo-text p:last-child {
+  padding-bottom: 0;
+}
+
+.number-list {
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #3f3f3f;
+}
+
+.number-list li {
+  padding-bottom: 30px;
+}
+
+.number-list li:last-child {
+  padding-bottom: 0;
+}
+
+.number-list li span {
+  font-weight: 700;
+}
+
 /* End Typography */
 
 /* Base styles */
@@ -637,22 +675,6 @@ body {
 
 .accordeon__item-text--show {
   display: block;
-}
-
-.seo-text {
-  padding-bottom: 65px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: #3f3f3f;
-}
-
-.seo-text p {
-  padding-bottom: 20px;
-}
-
-.seo-text p:last-child {
-  padding-bottom: 0;
 }
 
 .base-btn {
@@ -1959,7 +1981,6 @@ body {
   word-wrap: break-word;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid #000;
 }
 
 .p-about .col-6-padding {
@@ -1974,7 +1995,6 @@ body {
 
 .p-about .col-11-padding {
   width: calc(91.66667% - 30px);
-  background-color: #f7f7f5;
 }
 
 .p-about__main-title {
@@ -2008,8 +2028,35 @@ body {
 }
 
 .p-about img {
+  display: block;
   max-width: 100%;
   border-radius: 5px;
+}
+
+.p-about__section-2 {
+  margin-top: 30px;
+  padding: 30px 30px 30px 458px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+}
+
+.p-about .about-2 .col-6-padding {
+  position: relative;
+  z-index: 1;
+  margin-left: 0;
+}
+
+.p-about .about-2 .col-11-padding {
+  margin-left: -428px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.p-about .about-2 img {
+  height: 100%;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* END MAIN STYLES */
