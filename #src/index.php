@@ -13,8 +13,11 @@
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog-page.html">Каталог товаров</a></li>
     <li><a href="item-page.html">Карточка твара</a></li>
+    <li><a href="about-page.html">О нас</a></li>
     <!-- <li><a href="delivery-page.html">Доставка и оплата</a></li> -->
     <li><a href="reviews-page.html">Отзывы о товарах</a></li>
+    <!-- <li><a href="contacts-page.html">Контакты</a></li> -->
+    <!-- <li><a href="cart-page.html">Корзина</a></li> -->
   </ul>
 </body>
 
