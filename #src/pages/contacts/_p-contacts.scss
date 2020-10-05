@@ -1,0 +1,68 @@
+.p-contacts {
+  &__main-title {
+    padding-bottom: 90px;
+    font-size: 40px;
+    color: #020205;
+  }
+
+  &__wrapper {
+    margin-bottom: 60px;
+  }
+
+  &__small-title {
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #020205;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 35px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #3f3f3f;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--address {
+      content: url("");
+    }
+
+    &--phone {
+      content: url("");
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+
+    &--mobile {
+      content: url("");
+      display: inline-block;
+    }
+
+    &--mail {
+      content: url("");
+    }
+
+    &--time {
+    }
+
+    a {
+      color: inherit;
+      transition: $base-transition;
+
+      &:hover {
+        color: #ff8b00;
+      }
+    }
+  }
+}
