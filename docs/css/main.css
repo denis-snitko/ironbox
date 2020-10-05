@@ -444,6 +444,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1618,6 +1619,14 @@ body {
   margin-bottom: 10px;
   margin-left: 0;
   text-align: right;
+}
+
+.p-catalog__big-set {
+  margin-bottom: 70px;
+}
+
+.p-catalog .small-set-body {
+  margin-bottom: 70px;
 }
 
 /* END MAIN STYLES */
