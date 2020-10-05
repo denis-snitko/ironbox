@@ -6,18 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/main.css">
-  <title>Главная - Каталог товаров</title>
-  <style>
-    /* Надпись NEW в красном кружочке */
-    .small-set--new::before {
-      content: 'New'
-    }
-
-    /* Надпись ХИТ в красном кружочке */
-    .small-set--best::before {
-      content: 'Хит'
-    }
-  </style>
+  <title>Главная - Карточка товара</title>
 </head>
 
 <body>
@@ -28,7 +17,7 @@
     <div class="main-content">
 
       <div class="container">
-        @@include('pages/catalog/_p-catalog.html')
+        @@include('pages/delivery-page/_p-delivery.html')
       </div>
 
       @@include('modules/s-subscribe-second/_s-subscribe-second.html')

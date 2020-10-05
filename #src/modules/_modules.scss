@@ -1,3 +1,5 @@
+@import "./s-breadcrumbs/breadcrumbs";
+
 @import "./s-header/s-header";
 
 @import "./s-hero/s-hero";
@@ -16,5 +18,5 @@
 
 // PAGES
 
-@import "../pages/p-catalog/p-catalog";
+@import "../pages/catalog/p-catalog";
 @import "../pages/item-page/p-item-page";

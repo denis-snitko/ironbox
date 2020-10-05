@@ -1,0 +1,44 @@
+.breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  color: #686868;
+  // .s-breadcrumbs__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .s-breadcrumbs__item
+
+  &__item {
+    position: relative;
+    padding-right: 20px;
+
+    &::after {
+      content: url("../img/icons/bread-arrow.svg");
+      position: absolute;
+      top: 0;
+      right: 8px;
+      display: inline-block;
+      width: 5px;
+      height: 8px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      font-weight: 700;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -12,6 +12,7 @@
   <ul style="list-style-type: none; font-size: 18px;">
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog-page.html">Каталог товаров</a></li>
+    <li><a href="item-page.html">Карточка твара</a></li>
   </ul>
 </body>
 
