@@ -13,6 +13,8 @@
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog-page.html">Каталог товаров</a></li>
     <li><a href="item-page.html">Карточка твара</a></li>
+    <!-- <li><a href="delivery-page.html">Доставка и оплата</a></li> -->
+    <li><a href="reviews-page.html">Отзывы о товарах</a></li>
   </ul>
 </body>
 

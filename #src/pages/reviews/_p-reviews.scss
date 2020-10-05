@@ -1,0 +1,53 @@
+.p-reviews {
+  &__base-btn {
+    margin-bottom: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+    font-size: 16px;
+  }
+
+  &__small-title {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #020205;
+  }
+
+  &__review {
+    margin-bottom: 40px;
+  }
+
+  &__more-btn {
+    margin-bottom: 70px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 6px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff8b00;
+
+    background: none;
+    border: none;
+    border-bottom: 1px dashed #ff8b00;
+
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  &__input,
+  &__textarea {
+    margin-bottom: 20px;
+  }
+
+  &__textarea {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .seo-text {
+    padding-bottom: 40px;
+  }
+}
