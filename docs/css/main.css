@@ -1948,6 +1948,70 @@ body {
   padding-bottom: 40px;
 }
 
+.p-about__s-waranty {
+  padding-top: 0;
+  padding-bottom: 150px;
+}
+
+.p-about .col-6-padding,
+.p-about .col-8-padding,
+.p-about .col-11-padding {
+  word-wrap: break-word;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #000;
+}
+
+.p-about .col-6-padding {
+  width: calc(50% - 30px);
+  margin-left: -135px;
+  padding: 0;
+}
+
+.p-about .col-8-padding {
+  width: calc(66.66667% - 30px);
+}
+
+.p-about .col-11-padding {
+  width: calc(91.66667% - 30px);
+  background-color: #f7f7f5;
+}
+
+.p-about__main-title {
+  padding-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.p-about__title {
+  margin-bottom: 40px;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #020205;
+  text-transform: uppercase;
+}
+
+.p-about__section-1 {
+  margin-bottom: 150px;
+  padding: 30px 145px 45px 30px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+}
+
+.p-about__section-1 p {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+.p-about img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
 /* END MAIN STYLES */
 
 @media screen and (max-width: 768px) {
