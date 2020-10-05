@@ -1,0 +1,139 @@
+.p-item-page {
+  &__big-set {
+    margin-bottom: 70px;
+    background-color: #ffffff;
+  }
+
+  &__main-title {
+    text-align: left;
+  }
+}
+
+.delivery {
+  padding: 15px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #020205;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 38px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3f3f3f;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--truck {
+      &::before {
+        content: url("../img/icons/truck.svg");
+      }
+    }
+
+    &--box {
+      &::before {
+        content: url("../img/icons/box.svg");
+      }
+    }
+
+    &:first-child {
+      padding-bottom: 15px;
+    }
+
+    p {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.set-composition {
+  padding-bottom: 100px;
+  &__row {
+    @include row-flex();
+  }
+
+  &__col-3,
+  &__col-9 {
+    @include col();
+  }
+
+  &__col-3 {
+    @include size(3);
+  }
+  &__col-9 {
+    @include size(9);
+    padding-right: 100px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #020205;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background-color: rgba($color: #ff8b00, $alpha: 0.5);
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #3f3f3f;
+
+    span {
+      font-weight: 700;
+    }
+
+    p {
+      display: inline-block;
+      padding-bottom: 15px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    // width: 100%;
+    // max-width: 300px;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.strong-text {
+  font-weight: 700;
+}

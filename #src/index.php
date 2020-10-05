@@ -10,7 +10,8 @@
 <body>
   <h3>Список страниц</h3>
   <ul style="list-style-type: none; font-size: 18px;">
-    <li><a href="index.html">index.html</a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog-page.html">Каталог товаров</a></li>
   </ul>
 </body>
 

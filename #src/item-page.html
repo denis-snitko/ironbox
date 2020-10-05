@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Главная - Карточка товара</title>
+  <style>
+    /* Надпись NEW в красном кружочке */
+    .small-set--new::before {
+      content: 'New'
+    }
+
+    /* Надпись ХИТ в красном кружочке */
+    .small-set--best::before {
+      content: 'Хит'
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-body">
+
+    @@include('modules/s-header/_s-header.html')
+
+    <div class="main-content">
+
+      <div class="container">
+        @@include('pages/item-page/_p-item-page.html')
+      </div>
+
+      @@include('modules/s-subscribe-second/_s-subscribe-second.html')
+
+    </div>
+
+    @@include('modules/s-footer/_s-footer.html')
+
+  </div>
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

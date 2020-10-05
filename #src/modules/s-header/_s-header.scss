@@ -98,6 +98,10 @@
     margin-right: 17px;
     padding: 0;
     transform: skewX(20deg);
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   img {
