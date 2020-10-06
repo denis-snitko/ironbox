@@ -122,4 +122,10 @@
       color: #666666;
     }
   }
+
+  &__radio-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

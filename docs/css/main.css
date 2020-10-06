@@ -1145,6 +1145,160 @@ body {
   border: 1px solid #cccccc;
 }
 
+.custom-radio {
+  width: 100%;
+  max-width: 245px;
+}
+
+.custom-radio__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-radio__base {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.custom-radio__new {
+  position: relative;
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ff8b00;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.custom-radio__new::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff8b00;
+  border-radius: inherit;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.custom-radio__base:checked + .custom-radio__new::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio__base:checked .custom-radio {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio__base:checked + .custom-radio__label {
+  border: 1px solid #ff8b00;
+}
+
+.custom-radio__base:focus + .custom-radio__new {
+  border: 1px solid orangered;
+}
+
+.custom-radio__text {
+  position: relative;
+  padding: 0 5px;
+  padding-left: 45px;
+  font-size: 20px;
+}
+
+.custom-radio__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.custom-radio__text--truck::before {
+  content: url("../img/icons/truck.svg");
+}
+
+.custom-radio__text--car::before {
+  content: url("../img/icons/car.svg");
+}
+
+.custom-radio__text--credit-2::before {
+  content: url("../img/icons/credit-2.svg");
+}
+
+.custom-radio__text--credit::before {
+  content: url("../img/icons/credit.svg");
+}
+
+.custom-radio .title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #020205;
+}
+
+.custom-radio .date {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.custom-radio .price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff8b00;
+}
+
+.custom-radio .p-delivery-info__credit {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 0;
+}
+
+.custom-radio .p-delivery-info__credit img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.custom-radio .p-delivery-info__credit img {
+  width: 100%;
+  max-width: 28px;
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */
@@ -2433,6 +2587,17 @@ body {
   padding-left: 15px;
   font-size: 16px;
   color: #666666;
+}
+
+.p-cart__radio-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* END MAIN STYLES */

@@ -618,3 +618,134 @@
 .map {
   border: 1px solid #cccccc;
 }
+
+// CUSTOM RADIO
+
+.custom-radio {
+  width: 100%;
+  max-width: 245px;
+
+  &__label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__base {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__new {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ff8b00;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.15s linear;
+  }
+
+  &__new::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ff8b00;
+    border-radius: inherit;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.15s linear;
+  }
+
+  &__base:checked + &__new::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__base:checked & {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__base:checked + &__label {
+    border: 1px solid #ff8b00;
+  }
+
+  &__base:focus + &__new {
+    border: 1px solid orangered;
+  }
+
+  &__text {
+    position: relative;
+    padding: 0 5px;
+    padding-left: 45px;
+
+    font-size: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+
+    &--truck::before {
+      content: url("../img/icons/truck.svg");
+    }
+
+    &--car::before {
+      content: url("../img/icons/car.svg");
+    }
+
+    &--credit-2::before {
+      content: url("../img/icons/credit-2.svg");
+    }
+
+    &--credit::before {
+      content: url("../img/icons/credit.svg");
+    }
+  }
+
+  .title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #020205;
+  }
+  .date {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3f3f3f;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff8b00;
+  }
+
+  .p-delivery-info__credit {
+    justify-content: flex-start;
+    margin-top: 0;
+    img:not(:last-child) {
+      margin-right: 10px;
+    }
+    img {
+      width: 100%;
+      max-width: 28px;
+    }
+  }
+}
