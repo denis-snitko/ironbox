@@ -1974,6 +1974,146 @@ body {
   padding-bottom: 40px;
 }
 
+.p-delivery__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #020205;
+}
+
+.p-delivery-info {
+  padding: 30px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+}
+
+.p-delivery-info .seo-text {
+  padding-bottom: 40px;
+}
+
+.p-delivery-info a {
+  color: inherit;
+}
+
+.p-delivery-info:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.p-delivery-info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.p-delivery-info__col-6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+}
+
+.p-delivery-info__col-6:not(:last-child) {
+  padding-right: 15px;
+  border-right: 1px solid #cccccc;
+}
+
+.p-delivery-info__title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #020205;
+}
+
+.p-delivery-info__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.p-delivery-info__title--truck::before {
+  content: url("../img/icons/truck.svg");
+}
+
+.p-delivery-info__title--car::before {
+  content: url("../img/icons/car.svg");
+}
+
+.p-delivery-info__title--credit::before {
+  content: url("../img/icons/credit.svg");
+}
+
+.p-delivery-info__descr {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3f3f3f;
+}
+
+.p-delivery-info__list {
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+.p-delivery-info__item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.p-delivery-info__item::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.p-delivery-info__item--time::before {
+  content: url("../img/icons/f-time.svg");
+}
+
+.p-delivery-info__item--truck::before {
+  content: url("../img/icons/white-truck.svg");
+}
+
+.p-delivery-info__item--calendar::before {
+  content: url("../img/icons/calendar.svg");
+}
+
+.p-delivery-info__item--tel::before {
+  content: url("../img/icons/f-mobile.svg");
+}
+
+.p-delivery-info__credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.p-delivery-info__credit img {
+  display: inline-block;
+}
+
+.p-delivery-info__credit img:not(:last-child) {
+  margin-right: 70px;
+}
+
 .p-about__s-waranty {
   padding-top: 0;
   padding-bottom: 150px;

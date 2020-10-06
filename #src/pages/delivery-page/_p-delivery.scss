@@ -1,9 +1,126 @@
-.p-catalog {
-  &__big-set {
-    margin-bottom: 70px;
+.p-delivery {
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #020205;
+  }
+}
+
+.p-delivery-info {
+  .seo-text {
+    padding-bottom: 40px;
   }
 
-  .small-set-body {
-    margin-bottom: 70px;
+  a {
+    color: inherit;
+  }
+
+  padding: 30px;
+  background-color: #f7f7f5;
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    @include row-flex;
+  }
+
+  &__col-6 {
+    @include col();
+    @include size(6);
+
+    &:not(:last-child) {
+      padding-right: 15px;
+      border-right: 1px solid #cccccc;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #020205;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+
+    &--truck::before {
+      content: url("../img/icons/truck.svg");
+    }
+
+    &--car::before {
+      content: url("../img/icons/car.svg");
+    }
+
+    &--credit::before {
+      content: url("../img/icons/credit.svg");
+    }
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #3f3f3f;
+  }
+
+  &__list {
+    font-size: 18px;
+    color: #3f3f3f;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--time::before {
+      content: url("../img/icons/f-time.svg");
+    }
+
+    &--truck::before {
+      content: url("../img/icons/white-truck.svg");
+    }
+
+    &--calendar::before {
+      content: url("../img/icons/calendar.svg");
+    }
+
+    &--tel::before {
+      content: url("../img/icons/f-mobile.svg");
+    }
+  }
+
+  &__credit {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    img {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 70px;
+      }
+    }
   }
 }
