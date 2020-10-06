@@ -562,7 +562,6 @@ body {
 
 .col-5 {
   width: calc(41.66667% - 30px);
-  border: 1px solid #000;
 }
 
 .col-6 {
@@ -2070,7 +2069,7 @@ body {
   color: #020205;
 }
 
-.p-contacts__wrapper {
+.p-contacts__wrapper:not(:last-child) {
   margin-bottom: 60px;
 }
 
@@ -2091,6 +2090,14 @@ body {
   color: #3f3f3f;
 }
 
+.p-contacts__text--social {
+  padding-left: 0;
+}
+
+.p-contacts__text--social a:not(:last-child) {
+  margin-right: 15px;
+}
+
 .p-contacts__text::before {
   content: "";
   position: absolute;
@@ -2100,23 +2107,33 @@ body {
   height: 25px;
 }
 
-.p-contacts__text--address {
-  content: url("");
+.p-contacts__text--address::before {
+  content: url("../img/icons/f-address.svg");
 }
 
 .p-contacts__text--phone {
-  content: url("");
   display: inline-block;
   padding-bottom: 20px;
 }
 
+.p-contacts__text--phone::before {
+  content: url("../img/icons/f-phone.svg");
+}
+
 .p-contacts__text--mobile {
-  content: url("");
   display: inline-block;
 }
 
-.p-contacts__text--mail {
-  content: url("");
+.p-contacts__text--mobile::before {
+  content: url("../img/icons/f-mobile.svg");
+}
+
+.p-contacts__text--mail::before {
+  content: url("../img/icons/f-mail.svg");
+}
+
+.p-contacts__text--time::before {
+  content: url("../img/icons/f-time.svg");
 }
 
 .p-contacts__text a {
