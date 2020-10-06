@@ -30,8 +30,16 @@
     &--social {
       padding-left: 0;
 
-      a:not(:last-child) {
-        margin-right: 15px;
+      &::before {
+        display: none;
+      }
+
+      a {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
       }
     }
 

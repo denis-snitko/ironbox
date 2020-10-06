@@ -2094,6 +2094,14 @@ body {
   padding-left: 0;
 }
 
+.p-contacts__text--social::before {
+  display: none;
+}
+
+.p-contacts__text--social a {
+  display: inline-block;
+}
+
 .p-contacts__text--social a:not(:last-child) {
   margin-right: 15px;
 }
