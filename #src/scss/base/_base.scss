@@ -21,6 +21,7 @@
   @include row-flex();
 }
 
+.col-1,
 .col-2,
 .col-3,
 .col-4,
@@ -29,6 +30,11 @@
 .col-7,
 .col-8 {
   @include col();
+  // border: 1px solid #000;
+}
+
+.col-1 {
+  @include size(1);
 }
 
 .col-2 {

@@ -1,0 +1,125 @@
+.p-cart {
+  font-size: 18px;
+  color: #3f3f3f;
+
+  &__main-title {
+    padding-bottom: 90px;
+    font-size: 40px;
+    color: #020205;
+  }
+
+  &__box {
+    padding: 20px;
+    background-color: #f7f7f5;
+    border-radius: 5px;
+
+    &--total {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-size: 25px;
+    }
+  }
+
+  .row-flex--padding {
+    padding-bottom: 20px;
+  }
+
+  .row-flex--ac {
+    align-items: center;
+  }
+
+  &__item {
+    padding: 20px 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    border-top: 1px solid #cccccc;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 144px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__item-name {
+    font-family: $second-typeface;
+    font-size: 25px;
+    color: #020205;
+  }
+
+  &__price {
+    font-family: $second-typeface;
+    font-size: 25px;
+
+    color: #020205;
+  }
+
+  &__close {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    border: none;
+  }
+
+  .counter form .minus::before,
+  .counter form .plus::before {
+    top: 42%;
+  }
+
+  &__total-text:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__form {
+    .form__input {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__form-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #020205;
+  }
+
+  &__form-btn {
+    width: 100%;
+  }
+
+  .custom-checkbox {
+    margin-bottom: 40px;
+    padding-left: 0;
+
+    &__label {
+      display: block;
+    }
+
+    &__new {
+      top: 4px;
+
+      &::before {
+        content: url("../img/icons/check-black.svg");
+      }
+    }
+
+    &__text {
+      padding-left: 15px;
+      font-size: 16px;
+      color: #666666;
+    }
+  }
+}

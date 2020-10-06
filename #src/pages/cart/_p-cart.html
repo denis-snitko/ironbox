@@ -1,0 +1,178 @@
+<div class="p-cart">
+
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Корзина
+      </li>
+    </ul>
+  </div>
+
+  <h1 class="main-title p-cart__main-title">Корзина</h1>
+
+  <div class="p-cart__box">
+    <div class="row-flex row-flex--padding">
+      <div class="col-2">Фото</div>
+      <div class="col-4">Наименование товара</div>
+      <div class="col-3">Количество</div>
+      <div class="col-3">Цена</div>
+    </div>
+
+    <div class="p-cart__item">
+      <div class="row-flex row-flex--ac">
+        <div class="col-2 ml-none">
+          <img src="./img/products/s-product-1.jpg" alt="#" class="p-cart__img">
+        </div>
+        <div class="col-4">
+          <div class="p-cart__item-name">
+            №4 :<br>Good Look!
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="counter">
+            <form action="#">
+              <div class="minus" data-minus></div>
+              <input type="text" value="1" data-counter>
+              <div class="plus" data-plus></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="p-cart__price">5 000 ₽</div>
+        </div>
+        <div class="col-1">
+          <button class="p-cart__close"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-cart__item">
+      <div class="row-flex row-flex--ac">
+        <div class="col-2 ml-none">
+          <img src="./img/products/product-6.jpg" alt="#" class="p-cart__img">
+        </div>
+        <div class="col-4">
+          <div class="p-cart__item-name">
+            №2 :<br>Race with Pleasure!
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="counter">
+            <form action="#">
+              <div class="minus" data-minus></div>
+              <input type="text" value="1" data-counter>
+              <div class="plus" data-plus></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="p-cart__price">5 000 ₽</div>
+        </div>
+        <div class="col-1">
+          <button class="p-cart__close"></button>
+        </div>
+      </div>
+    </div>
+    <div class="p-cart__item">
+      <div class="row-flex row-flex--ac">
+        <div class="col-2 ml-none">
+          <img src="./img/products/s-product-3.jpg" alt="#" class="p-cart__img">
+        </div>
+        <div class="col-4">
+          <div class="p-cart__item-name">
+            №5 :<br>Good Look!
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="counter">
+            <form action="#">
+              <div class="minus" data-minus></div>
+              <input type="text" value="1" data-counter>
+              <div class="plus" data-plus></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="p-cart__price">15 000 ₽</div>
+        </div>
+        <div class="col-1">
+          <button class="p-cart__close"></button>
+        </div>
+      </div>
+    </div>
+    <div class="p-cart__item">
+      <div class="row-flex row-flex--ac">
+        <div class="col-2 ml-none">
+          <img src="./img/products/s-product-1.jpg" alt="#" class="p-cart__img">
+        </div>
+        <div class="col-4">
+          <div class="p-cart__item-name">
+            №4 :<br>Good Look!
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="counter">
+            <form action="#">
+              <div class="minus" data-minus></div>
+              <input type="text" value="1" data-counter>
+              <div class="plus" data-plus></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="p-cart__price">5 000 ₽</div>
+        </div>
+        <div class="col-1">
+          <button class="p-cart__close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-cart__box p-cart__box--total">
+    <div class="p-cart__total-text">
+      Скидка: <span class="strong-text">0 ₽</span>
+    </div>
+    <div class="p-cart__total-text">
+      Доставка: <span class="strong-text">220 ₽</span>
+    </div>
+    <div class="p-cart__total-text">
+      Итого: <span class="strong-text orange-text orange-text--big">13 030 ₽</span>
+    </div>
+  </div>
+
+  <form action="#" class="form p-cart__form">
+    <div class="row-flex">
+      <div class="col-6">
+        <div class="p-cart__box" style="margin-bottom: 10px;">
+          <div class="p-cart__form-title">Доставка заказа</div>
+        </div>
+        <div class="p-cart__box">
+          <div class="p-cart__form-title">Оплата заказа</div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-cart__box">
+          <div class="p-cart__form-title">Личная информация</div>
+          <input type="text" class="form__input" placeholder="Введи имя">
+          <input type="text" class="form__input" placeholder="Введи телефон *" required>
+          <input type="mail" class="form__input" placeholder="Введи Email *" required>
+          <div class="custom-checkbox">
+            <label class="custom-checkbox__label">
+              <input class="custom-checkbox__base" type="checkbox" name="">
+              <span class="custom-checkbox__new"></span>
+              <span class="custom-checkbox__text">Согласен с <a href="#">политикой
+                  конфиденциальности</a> и правилами заказа</span>
+            </label>
+          </div>
+
+          <button class="base-btn p-cart__form-btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>

@@ -15,6 +15,10 @@ body {
 
 .orange-text {
   color: #ff8b00;
+
+  &--big {
+    font-size: 30px;
+  }
 }
 
 // SEO-TEXT {
