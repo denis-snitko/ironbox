@@ -32,6 +32,10 @@
     padding-bottom: 40px;
     font-family: $second-typeface;
     font-size: 30px;
+
+    @include sm-block() {
+      text-align: center;
+    }
   }
 
   &__subscribe-form {
@@ -60,62 +64,10 @@
 
   .base-btn {
     margin-left: 30px;
-  }
-}
 
-.custom-checkbox {
-  padding-left: 100px;
-  &__label {
-    display: inline-flex;
-    align-items: baseline;
-    cursor: pointer;
-  }
-
-  &__base {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-
-  &__new {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: all 0.15s linear;
-  }
-
-  &__new::before {
-    content: url("../img/icons/check-white.svg");
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    display: block;
-    transform: translate(-50%, -50%) scale(0);
-    transition: all 0.15s linear;
-  }
-
-  &__base:checked + &__new::before {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  &__text {
-    padding-left: 20px;
-    font-size: 18px;
-    line-height: 25px;
-
-    color: #ffffff;
-
-    a {
-      color: #ff8b00;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    @include sm-block() {
+      margin-bottom: 40px;
+      margin-left: 0;
     }
   }
 }

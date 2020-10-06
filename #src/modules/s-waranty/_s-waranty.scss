@@ -16,6 +16,10 @@
     font-weight: bold;
     font-size: 20px;
     color: #020205;
+
+    @include sm-block() {
+      font-size: 18px;
+    }
   }
 
   &__descr {
@@ -24,5 +28,24 @@
     font-size: 18px;
     line-height: 140%;
     color: #3f3f3f;
+
+    @include sm-block() {
+      font-size: 16px;
+    }
+  }
+
+  @include md-block() {
+    .col-3:nth-child(1) {
+      margin-bottom: 60px;
+    }
+    .col-3:nth-child(2) {
+      margin-bottom: 60px;
+    }
+  }
+
+  @include sm-block() {
+    .col-3:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 }

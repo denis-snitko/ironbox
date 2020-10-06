@@ -6,6 +6,10 @@
 
   background-color: #020205;
 
+  @include md-block() {
+    padding-bottom: 20px;
+  }
+
   &__logo {
     img {
       width: 167px;
@@ -14,6 +18,10 @@
   }
 
   &__menu {
+    @include md-block() {
+      margin-bottom: 40px;
+    }
+
     &-item {
       margin-bottom: 20px;
 
@@ -50,5 +58,47 @@
     margin-bottom: 10px;
     margin-left: 0;
     text-align: right;
+
+    @include md-block() {
+      margin-bottom: 65px;
+    }
+
+    @include xs-block() {
+      padding-left: 30px;
+      font-size: 12px;
+    }
+  }
+
+  @include md-block() {
+    .col-2,
+    .col-3 {
+      @include size-md(6);
+    }
+
+    .col-3--fix {
+      @include size-md(12);
+      display: flex;
+      width: 100%;
+    }
+
+    .col-4 {
+      order: 1;
+      width: 100%;
+      text-align: center;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contacts--phone {
+      margin-right: 20px;
+    }
+  }
+
+  @include md-block() {
+    .contacts--phone {
+      margin-right: 10px;
+    }
   }
 }

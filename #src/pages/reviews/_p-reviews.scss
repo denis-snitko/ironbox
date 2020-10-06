@@ -12,6 +12,10 @@
     font-weight: 700;
     font-size: 30px;
     color: #020205;
+
+    @include sm-block() {
+      font-size: 20px;
+    }
   }
 
   &__review {
@@ -49,5 +53,14 @@
 
   .seo-text {
     padding-bottom: 40px;
+  }
+
+  .col-4 {
+    @include size-md(6);
+    @include size-sm(12);
+  }
+
+  .col-8 {
+    @include size-md(12);
   }
 }

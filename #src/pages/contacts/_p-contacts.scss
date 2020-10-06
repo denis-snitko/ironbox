@@ -1,8 +1,20 @@
 .p-contacts {
+  @include sm-block() {
+    .col-7 {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
   &__main-title {
     padding-bottom: 90px;
     font-size: 40px;
     color: #020205;
+
+    @include sm-block() {
+      padding-bottom: 0;
+    }
   }
 
   &__wrapper {
@@ -29,6 +41,10 @@
 
     &--social {
       padding-left: 0;
+
+      @include sm-block() {
+        margin-bottom: 50px;
+      }
 
       &::before {
         display: none;
