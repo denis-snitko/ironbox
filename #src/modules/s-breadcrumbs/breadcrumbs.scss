@@ -3,6 +3,16 @@
   padding-bottom: 70px;
 
   color: #686868;
+
+  @include sm-block() {
+    padding-bottom: 50px;
+    font-size: 14px;
+  }
+
+  @include xs-block() {
+    font-size: 12px;
+  }
+
   // .s-breadcrumbs__list
 
   &__list {

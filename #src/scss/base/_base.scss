@@ -227,6 +227,10 @@
   &__descr {
     padding-top: 30px;
     padding-right: 30px;
+
+    @include md-block() {
+      padding-right: 0;
+    }
   }
 
   &__row {
@@ -242,6 +246,10 @@
     font-size: 30px;
 
     color: #020205;
+
+    @include sm-block() {
+      font-size: 25px;
+    }
   }
 
   &__price {
@@ -253,9 +261,13 @@
 
   &__slogan {
     padding-bottom: 30px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     color: #3f3f3f;
+
+    @include sm-block() {
+      font-size: 16px;
+    }
   }
 
   &__btn-row {
@@ -263,6 +275,18 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+
+    @include sm-block() {
+      flex-wrap: wrap;
+    }
+
+    .base-btn {
+      @include sm-block() {
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
   &__base-list {
@@ -271,15 +295,30 @@
 
   .col-6 {
     border-radius: 5px;
+
+    @include size-md(12);
   }
 
   &__swiper {
     .slider__item {
+      @include sm-block() {
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
       img {
         display: block;
         width: 570px;
         height: 388px;
         object-fit: cover;
+
+        @include md-block() {
+          width: 100%;
+        }
+
+        @include sm-block() {
+          max-height: 204px;
+        }
       }
     }
 
@@ -293,6 +332,10 @@
         object-fit: cover;
 
         cursor: pointer;
+      }
+
+      @include sm-block() {
+        display: none;
       }
     }
   }
@@ -820,6 +863,103 @@
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+// SET-COMPOSITION
+
+.set-composition {
+  padding-bottom: 100px;
+  &__row {
+    @include row-flex();
+  }
+
+  &__col-3,
+  &__col-9 {
+    @include col();
+  }
+
+  &__col-3 {
+    @include size(3);
+    @include size-md(5);
+    @include size-sm(12);
+  }
+  &__col-9 {
+    @include size(9);
+    @include size-md(7);
+    @include size-sm(12);
+
+    padding-right: 100px;
+
+    @include md-block() {
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #020205;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background-color: rgba($color: #ff8b00, $alpha: 0.5);
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include sm-block() {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #3f3f3f;
+
+    span {
+      font-weight: 700;
+    }
+
+    p {
+      display: inline-block;
+      padding-bottom: 15px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    @include md-block() {
+      font-size: 16px;
+    }
+
+    @include sm-block() {
+      font-size: 14px;
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+
+      @include sm-block() {
+        margin: 0 auto;
+        margin-top: 35px;
       }
     }
   }

@@ -13,7 +13,7 @@
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog-page.html">Каталог товаров</a></li>
     <li><a href="item-page.html">Карточка твара</a></li>
-    <li><a href="about-page.html">О нас</a></li> <!-- + адаптив 80% -->
+    <li><a href="about-page.html">О нас</a></li> <!-- + адаптив -->
     <li><a href="delivery-page.html">Доставка и оплата</a></li> <!-- + адаптив -->
     <li><a href="reviews-page.html">Отзывы о товарах</a></li> <!-- + адаптив -->
     <li><a href="contacts-page.html">Контакты</a></li> <!-- + адаптив -->
