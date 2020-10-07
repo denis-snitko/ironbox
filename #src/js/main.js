@@ -1,4 +1,6 @@
-
+AOS.init({
+  duration: 1100
+});
 
 let itemSwiper = document.querySelectorAll('.swiper-container-product');
 
