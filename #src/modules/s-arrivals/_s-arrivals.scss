@@ -1,7 +1,23 @@
 .s-arrivals {
   padding: 75px 0;
-  
+
+  @include sm-block() {
+    padding-bottom: 0;
+  }
+
   &__main-title {
     text-align: center;
+  }
+
+  .row-flex {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 25px;
+    overflow-x: auto;
+  }
+
+  .col-4,
+  .small-set {
+    width: 340px;
   }
 }

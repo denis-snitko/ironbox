@@ -2,11 +2,16 @@
   margin-bottom: 75px;
   padding-top: 133px;
   padding-bottom: 193px;
-  // height: 700px;
   color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include sm-block() {
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   &__title {
     max-width: 730px;
@@ -15,6 +20,12 @@
     font-weight: 400;
     font-size: 45px;
     text-transform: uppercase;
+
+    @include sm-block() {
+      max-width: 270px;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
   }
 
   &__descr {
@@ -22,5 +33,11 @@
     margin-bottom: 90px;
     opacity: 0.7;
     font-size: 18px;
+
+    @include sm-block() {
+      max-width: 270px;
+      margin-bottom: 30px;
+      font-size: 10px;
+    }
   }
 }

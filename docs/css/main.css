@@ -623,6 +623,7 @@ body {
   position: relative;
   margin-left: 50px;
   padding-left: 35px;
+  white-space: nowrap;
   color: #ffffff;
 }
 
@@ -1464,6 +1465,12 @@ body {
   max-width: 300px;
 }
 
+.set-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */
@@ -1704,12 +1711,42 @@ body {
   text-align: center;
 }
 
+.s-arrivals .row-flex {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  overflow-x: auto;
+}
+
+.s-arrivals .col-4,
+.s-arrivals .small-set {
+  width: 340px;
+}
+
 .s-bestsellers {
   padding: 75px 0;
 }
 
 .s-bestsellers__main-title {
   text-align: center;
+}
+
+.s-bestsellers .row-flex {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  overflow-x: auto;
+}
+
+.s-bestsellers .col-4,
+.s-bestsellers .small-set {
+  width: 340px;
 }
 
 .s-subscribe {
@@ -2631,10 +2668,6 @@ body {
 
 @media screen and (max-width: 992px) {
   .col-4 {
-    width: calc(50% - 30px);
-  }
-
-  .col-4 {
     margin-bottom: 30px;
   }
 }
@@ -2642,10 +2675,6 @@ body {
 @media screen and (max-width: 768px) {
   .col-3 {
     width: calc(50% - 30px);
-  }
-
-  .col-4 {
-    width: calc(100% - 30px);
   }
 
   .big-set__descr {
@@ -2658,10 +2687,6 @@ body {
 
   .big-set__swiper .slider__item img {
     width: 100%;
-  }
-
-  .small-set__img img {
-    height: auto;
   }
 
   .set-composition__col-3 {
@@ -2899,6 +2924,12 @@ body {
     font-size: 14px;
   }
 
+  .base-btn--arrow {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 15px;
+  }
+
   .big-set__title {
     font-size: 25px;
   }
@@ -2959,6 +2990,32 @@ body {
   .breadcrumbs {
     padding-bottom: 50px;
     font-size: 14px;
+  }
+
+  .s-hero {
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .s-hero__title {
+    max-width: 270px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .s-hero__descr {
+    max-width: 270px;
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+
+  .s-arrivals {
+    padding-bottom: 0;
+  }
+
+  .s-bestsellers {
+    padding-bottom: 0;
   }
 
   .s-subscribe__title {

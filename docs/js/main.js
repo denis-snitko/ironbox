@@ -1,5 +1,4 @@
 
-
 let itemSwiper = document.querySelectorAll('.swiper-container-product');
 
 itemSwiper.forEach(swiper => {
@@ -27,6 +26,31 @@ itemSwiper.forEach(swiper => {
   })
 
 })
+
+// SWIPER SECkOND
+
+new Swiper('.swiper-container-second', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  },
+})
+
 
 // SWIPER REWIEWS
 
