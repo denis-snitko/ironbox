@@ -60,5 +60,9 @@
     &--toggle {
       height: 100%;
     }
+
+    @include sm-block() {
+      font-size: 14px;
+    }
   }
 }

@@ -31,9 +31,15 @@ itemSwiper.forEach(swiper => {
 // SWIPER REWIEWS
 
 let swiper = new Swiper('.swiper-container-reviews', {
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 1,
   loop: true,
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
+  },
 
   navigation: {
     nextEl: '.swiper-button-next',

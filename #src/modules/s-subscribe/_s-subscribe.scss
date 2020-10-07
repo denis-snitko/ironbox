@@ -8,6 +8,12 @@
   background-color: #252525;
   overflow-x: hidden;
 
+  @include md-block() {
+    // margin-top: 50px;
+    // font-size: 25px;
+    height: auto;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -37,6 +43,11 @@
     font-size: 40px;
     color: #ffffff;
     text-transform: uppercase;
+
+    @include sm-block() {
+      margin-top: 50px;
+      font-size: 25px;
+    }
   }
 
   &__woman {
@@ -59,5 +70,16 @@
     .custom-checkbox {
       padding-left: 0;
     }
+  }
+
+  .col-4 {
+    @include size(4);
+    @include md-block() {
+      display: none;
+    }
+  }
+
+  .col-8 {
+    @include size-md(12);
   }
 }

@@ -11,8 +11,8 @@
   <h3>Список страниц</h3>
   <ul style="list-style-type: none; font-size: 18px;">
     <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog-page.html">Каталог товаров</a></li>
-    <li><a href="item-page.html">Карточка твара</a></li>
+    <li><a href="catalog-page.html">Каталог товаров</a></li> <!-- + адаптив -->
+    <li><a href="item-page.html">Карточка товара</a></li> <!-- + адаптив -->
     <li><a href="about-page.html">О нас</a></li> <!-- + адаптив -->
     <li><a href="delivery-page.html">Доставка и оплата</a></li> <!-- + адаптив -->
     <li><a href="reviews-page.html">Отзывы о товарах</a></li> <!-- + адаптив -->

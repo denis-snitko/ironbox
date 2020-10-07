@@ -1,18 +1,35 @@
 .s-package {
   padding: 75px 0;
 
+  @include sm-block() {
+    padding: 50px 0;
+  }
+
   &__main-title {
     text-align: center;
   }
 
   .col-7 {
     padding-left: 65px;
+
+    @include sm-block() {
+      padding-left: 0;
+    }
   }
 
   &__img {
+    @include sm-block() {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
     img {
       width: 100%;
       max-width: 504px;
+
+      @include sm-block() {
+        max-width: 237px;
+      }
     }
   }
 
@@ -24,6 +41,10 @@
     font-size: 30px;
 
     color: #020205;
+
+    @include xs-block() {
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -37,6 +58,10 @@
       &:last-child {
         padding-bottom: 0;
       }
+    }
+
+    @include xs-block() {
+      font-size: 14px;
     }
   }
 }

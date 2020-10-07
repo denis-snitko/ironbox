@@ -30,6 +30,42 @@ body {
   }
 }
 
+// BASE-LIST
+.base-list {
+  padding-bottom: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #3f3f3f;
+
+  @include xs-block() {
+    font-size: 14px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: rgba($color: #ff8b00, $alpha: 0.5);
+      border-radius: 50%;
+    }
+  }
+}
+
 // SEO-TEXT {
 .seo-text {
   padding-bottom: 65px;
