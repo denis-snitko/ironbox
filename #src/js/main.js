@@ -101,5 +101,17 @@ window.addEventListener('click', (event) => {
   if (event.target.hasAttribute('data-review-btn')) {
     event.target.previousElementSibling.classList.toggle('s-reviews__text--toggle');
   }
+
+  // Show / Hide burger
+  if (event.target.hasAttribute('data-burger-close')) {
+    document.querySelector('.burger').setAttribute('style', 'display: none');
+  }
+
+  if (event.target.classList.contains('burger-icon')) {
+    document.querySelector('.burger').setAttribute('style', 'display: block');
+  }
+
+
+
 })
 

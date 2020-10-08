@@ -975,7 +975,7 @@ body {
 
 .small-set__base-btn {
   width: 100%;
-  max-width: 148px;
+  max-width: 135px;
   padding-right: 16px;
   padding-left: 16px;
   font-size: 16px;
@@ -1538,6 +1538,17 @@ body {
   color: #ffffff;
 }
 
+.s-header .top-header__logo-mobile {
+  display: none;
+  width: 55px;
+  height: 45px;
+}
+
+.s-header .top-header__logo-mobile img {
+  width: inherit;
+  height: inherit;
+}
+
 .s-header .top-header__cart {
   position: relative;
   margin-left: 65px;
@@ -1566,6 +1577,16 @@ body {
   display: inline-block;
   font-size: 14px;
   color: #ff8b00;
+}
+
+.s-header .top-header .burger-icon {
+  display: none;
+  height: 100%;
+  max-height: 65px;
+  margin-right: -14px;
+  padding: 36px;
+  background: url("../img/icons/burger.svg") center no-repeat;
+  border-left: 1px solid #cccccc;
 }
 
 .main-menu {
@@ -2075,12 +2096,97 @@ body {
   text-align: right;
 }
 
+.burger {
+  display: none;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #f7f7f5;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.burger__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.burger__header p {
+  font-size: 18px;
+  color: #686868;
+}
+
+.burger__header svg {
+  pointer-events: none;
+}
+
+.burger__list {
+  margin-bottom: 20px;
+}
+
+.burger__list a {
+  display: block;
+  padding: 15px 0;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-size: 20px;
+  color: #020205;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.burger__list a:hover {
+  color: #ffffff;
+  background-color: #ff8b00;
+}
+
+.burger__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+  background-color: #1b1b1b;
+}
+
+.burger .contacts {
+  display: inline-block;
+  margin-bottom: 27px;
+  margin-left: 0;
+  font-family: "RussoOne-Regular", sans-serif;
+  font-size: 16px;
+}
+
 .p-catalog__big-set {
   margin-bottom: 70px;
 }
 
 .p-catalog .small-set-body {
   margin-bottom: 70px;
+}
+
+.p-catalog__base-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .p-item-page__big-set {
@@ -2666,6 +2772,17 @@ body {
 
 /* END MAIN STYLES */
 
+@media screen and (max-width: 1200px) {
+  .main-menu a {
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  .logo-block a {
+    margin-right: 47px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .col-4 {
     margin-bottom: 30px;
@@ -2703,6 +2820,46 @@ body {
 
   .set-composition__text {
     font-size: 16px;
+  }
+
+  .s-header {
+    padding: 0;
+    background-color: #f6f6f6;
+  }
+
+  .s-header .top-header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .s-header .top-header__logo-mobile {
+    display: block;
+  }
+
+  .s-header .top-header__cart {
+    margin-left: auto;
+    padding-right: 25px;
+  }
+
+  .s-header .top-header__cart svg path {
+    fill: #1b1b1b;
+  }
+
+  .s-header .top-header__cart-summ {
+    display: none;
+  }
+
+  .s-header .top-header .burger-icon {
+    display: block;
+  }
+
+  .s-header .contacts {
+    display: none;
+  }
+
+  .main-menu {
+    display: none;
   }
 
   .s-subscribe {
@@ -2766,6 +2923,10 @@ body {
 
   .s-footer .contacts--phone {
     margin-right: 10px;
+  }
+
+  .p-catalog .col-4 {
+    width: calc(50% - 30px);
   }
 
   .p-item-page__big-set .col-6 {
@@ -3063,6 +3224,10 @@ body {
   .subscribe-form .base-btn {
     margin-bottom: 40px;
     margin-left: 0;
+  }
+
+  .p-catalog .col-4 {
+    width: calc(100% - 30px);
   }
 
   .p-reviews__small-title {

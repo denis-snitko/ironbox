@@ -1,0 +1,62 @@
+.burger {
+  display: none;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #f7f7f5;
+  transition: $base-transition;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0 20px;
+
+    p {
+      font-size: 18px;
+      color: #686868;
+    }
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+    li {
+    }
+
+    a {
+      display: block;
+      padding: 15px 0;
+      font-family: $second-typeface;
+      font-size: 20px;
+      color: #020205;
+
+      transition: $base-transition;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #ff8b00;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #1b1b1b;
+  }
+
+  .contacts {
+    display: inline-block;
+    margin-bottom: 27px;
+    margin-left: 0;
+    font-family: $second-typeface;
+    font-size: 16px;
+  }
+}

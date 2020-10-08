@@ -3,18 +3,54 @@
   font-family: $second-typeface;
   background-color: #1b1b1b;
 
+  @include md-block {
+    padding: 0;
+    background-color: #f6f6f6;
+  }
+
   .top-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     color: #ffffff;
 
+    @include md-block {
+      justify-content: space-between;
+    }
+
+    &__logo-mobile {
+      display: none;
+
+      width: 55px;
+      height: 45px;
+
+      img {
+        width: inherit;
+        height: inherit;
+      }
+
+      @include md-block {
+        display: block;
+      }
+    }
+
     &__cart {
       position: relative;
       margin-left: 65px;
 
+      @include md-block {
+        margin-left: auto;
+        padding-right: 25px;
+      }
+
       svg {
         margin-bottom: -6px;
+
+        @include md-block {
+          path {
+            fill: #1b1b1b;
+          }
+        }
       }
 
       &-count {
@@ -36,7 +72,33 @@
         display: inline-block;
         font-size: 14px;
         color: #ff8b00;
+
+        @include md-block {
+          display: none;
+        }
       }
+    }
+
+    .burger-icon {
+      display: none;
+      // width: 100%;
+      // max-width: 90px;
+      height: 100%;
+      max-height: 65px;
+      margin-right: -14px;
+      padding: 36px;
+      background: url("../img/icons/burger.svg") center no-repeat;
+      border-left: 1px solid #cccccc;
+
+      @include md-block {
+        display: block;
+      }
+    }
+  }
+
+  .contacts {
+    @include md-block {
+      display: none;
     }
   }
 }
@@ -47,6 +109,10 @@
   align-items: center;
   justify-content: flex-end;
   font-family: $second-typeface;
+
+  @include md-block {
+    display: none;
+  }
 
   &__item {
     &:last-child a {
@@ -70,6 +136,11 @@
     span {
       display: inline-block;
       transform: skewX(20deg);
+    }
+
+    @include xl-block {
+      padding-right: 47px;
+      padding-left: 47px;
     }
   }
 }
@@ -101,6 +172,10 @@
 
     &:hover {
       background-color: transparent;
+    }
+
+    @include xl-block() {
+      margin-right: 47px;
     }
   }
 
