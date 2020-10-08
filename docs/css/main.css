@@ -757,11 +757,26 @@ body {
 }
 
 .show-more-btn {
+  position: relative;
+  margin-top: 15px;
+  padding: 0 15px 0 0;
   font-weight: bold;
   font-size: 18px;
   color: #ff8b00;
   background-color: transparent;
   border: none;
+}
+
+.show-more-btn::after {
+  content: url("../img/icons/review-icon.svg");
+  position: absolute;
+  top: 54%;
+  right: 0;
+  width: 12px;
+  height: 8px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
 }
 
 .big-set {
@@ -3049,6 +3064,15 @@ body {
     font-size: 25px;
   }
 
+  .base-list {
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .base-list li {
+    padding-bottom: 10px;
+  }
+
   .seo-text {
     font-size: 14px;
   }
@@ -3121,6 +3145,18 @@ body {
 
   .big-set__swiper .swiper-container-thumbs {
     display: none;
+  }
+
+  .small-set__img {
+    margin-bottom: 20px;
+  }
+
+  .small-set__title {
+    padding-bottom: 10px;
+  }
+
+  .small-set__slogan {
+    padding-bottom: 7px;
   }
 
   .custom-checkbox__text {
@@ -3295,10 +3331,6 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-  .base-list {
-    font-size: 14px;
-  }
-
   .small-set__base-btn {
     width: 135px;
   }

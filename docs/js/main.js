@@ -100,6 +100,11 @@ window.addEventListener('click', (event) => {
   // Show / Hide text in reviews
   if (event.target.hasAttribute('data-review-btn')) {
     event.target.previousElementSibling.classList.toggle('s-reviews__text--toggle');
+    if (event.target.textContent === 'Свернуть') {
+      event.target.textContent = 'Читать далее';
+    } else {
+      event.target.textContent = 'Свернуть';
+    }
   }
 
   // Show / Hide burger

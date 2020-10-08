@@ -235,11 +235,24 @@
 }
 
 .show-more-btn {
+  position: relative;
+  margin-top: 15px;
+  padding: 0 15px 0 0;
   font-weight: bold;
   font-size: 18px;
   color: #ff8b00;
   background-color: transparent;
   border: none;
+
+  &::after {
+    content: url("../img/icons/review-icon.svg");
+    position: absolute;
+    top: 54%;
+    right: 0;
+    width: 12px;
+    height: 8px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
 }
 
 // BIG-SET
@@ -433,6 +446,10 @@
     margin-bottom: 30px;
     margin-left: -20px;
 
+    @include sm-block() {
+      margin-bottom: 20px;
+    }
+
     img {
       display: block;
       width: 100%;
@@ -449,6 +466,10 @@
     font-weight: normal;
     font-size: 25px;
     color: #020205;
+
+    @include sm-block() {
+      padding-bottom: 10px;
+    }
   }
 
   &__slogan {
@@ -457,6 +478,10 @@
     font-weight: bold;
     font-size: 18px;
     color: #3f3f3f;
+
+    @include sm-block() {
+      padding-bottom: 7px;
+    }
   }
 
   &__base-list {

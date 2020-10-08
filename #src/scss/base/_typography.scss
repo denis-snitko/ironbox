@@ -38,7 +38,9 @@ body {
   font-size: 18px;
   color: #3f3f3f;
 
-  @include xs-block() {
+  @include sm-block() {
+    padding-bottom: 14px;
+
     font-size: 14px;
   }
 
@@ -62,6 +64,10 @@ body {
       height: 15px;
       background-color: rgba($color: #ff8b00, $alpha: 0.5);
       border-radius: 50%;
+    }
+
+    @include sm-block() {
+      padding-bottom: 10px;
     }
   }
 }
