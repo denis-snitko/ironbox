@@ -105,10 +105,12 @@ window.addEventListener('click', (event) => {
   // Show / Hide burger
   if (event.target.hasAttribute('data-burger-close')) {
     document.querySelector('.burger').setAttribute('style', 'display: none');
+    document.querySelector('.s-header').setAttribute('style', 'display: block');
   }
 
   if (event.target.classList.contains('burger-icon')) {
     document.querySelector('.burger').setAttribute('style', 'display: block');
+    document.querySelector('.s-header').setAttribute('style', 'display: none');
   }
 
 
